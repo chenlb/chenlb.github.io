@@ -1,7 +1,18 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>第一个 GitHub Pages.</p>
-</body>
-</html>
+---
+layout: default
+title: 第一个主页
+---
+
+<!-- Loop output paged posts -->
+<ul>
+{% for post in site.posts %}
+<li>
+<h2>
+  {{ post.date | date_to_string }} :
+  <a href="{{ post.url }}">
+    {{ post.title }}
+  </a>
+</h2>
+</li>
+{% endfor %}
+</ul>

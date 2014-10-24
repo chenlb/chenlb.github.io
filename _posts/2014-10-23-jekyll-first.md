@@ -23,15 +23,35 @@ Here is my first *jekyll Markdown* page.
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 
+/**
+ * 文档注释，打出本地 hostname
+ */
 public class EchoHostname {
 
 	public static void main(String[] args) {
+		//默认 UnknownHost
 		String hostname = "UnknownHost";
 		try {
+			/*
+				多行注释
+			*/
 			InetAddress addr = InetAddress.getLocalHost();
 			hostname = addr.getHostName();
 		} catch(UnknownHostException e) {}
 		System.out.println(hostname);
 	}
 }
+```
+
+## python 代码
+
+```python
+#!/usr/bin/python2.6
+import sys, getopt
+
+def usage():
+    print '''
+    hello.py <option> <value>
+    '''
+print 'hello world!'
 ```

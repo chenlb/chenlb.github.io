@@ -1,7 +1,8 @@
 ---
 layout: default
 ---
-  <div style="color:red;">post at {{ page.date }}</div>
+<h2>{{ page.title }}</h2>
+  <div>发表于 {{ page.date | date:"%Y-%m-%d" }}</div>
   <hr/>
  <div>
   {{ content }}

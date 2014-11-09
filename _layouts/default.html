@@ -3,9 +3,11 @@
   <head>
     <meta charset="utf-8">
     <link href="/css/style-mou.css" rel="stylesheet">
+    <link href="/css/toc.css" rel="stylesheet">
     <link href="/css/prettify-sunburst.css" rel="stylesheet">
     <script src="/js/jquery-1.11.1.min.js"></script>
     <script src="/js/google-code-prettify/prettify.js"></script>
+    <script src="/js/toc.js"></script>
 <script type="text/javascript">
   $(function(){
     $("pre").addClass("prettyprint linenums");
@@ -15,13 +17,13 @@
     <title>{{ page.title }}</title>
   </head>
   <body>
-    <div>
+    <div id="header">
       {% include head.html %}
     </div>
     <hr/>
   {{ content }}
   <hr/>
-   <div>
+   <div id="footer">
   {% include footer.html %}
    </div>
 {% include google-analytics.html %}

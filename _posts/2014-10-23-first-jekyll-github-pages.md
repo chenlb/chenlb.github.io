@@ -7,13 +7,13 @@ layout: post
 
 下面主要讲下功能点对应的配置。
 
-#### context
+## context
 
 模板中使用 post 的内容不不是使用 page.context，这样不会把 md 格式的转成 html，原样办出。
 
 应该直接使用 context
 
-#### 使用 github 的 GFM 解释 markdown
+## 使用 github 的 GFM 解释 markdown
 
 github 的 [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/) 支持三个 "`" 号且后面批定语言。那 jekyll 能支持 GFM 就最好了。
 
@@ -42,7 +42,7 @@ $(function(){
 </script>
 ```
 
-##### 如 Java 代码
+### 如 Java 代码
 
 ```java
 import java.net.InetAddress;
@@ -68,7 +68,7 @@ public class EchoHostname {
 }
 ```
 
-##### 如 python 代码
+### 如 python 代码
 
 ```python
 #!/usr/bin/python2.6
@@ -91,7 +91,7 @@ print 'hello world!'
 
 有了以上的代码及高亮处理，写技术 blog 使用 md 就很方便了。
 
-#### Mou 风格
+## Mou 风格
 
 平时也常用 mou，但 mou 它不支持 GFM。但它的字体及表格很好看。所以把 mou 的 md 转成 html，把它的 css 复制出来使用。
 
@@ -99,10 +99,10 @@ print 'hello world!'
 <link href="/css/style-mou.css" rel="stylesheet">
 ```
 
-#### Atom
+## Atom
 
 使用 Atom 来写 github pages 和 jekyll 的 md 格式 blog 不错。atom 支持 GFM 风格的高亮。
 
-#### jekyll
+## jekyll
 
 关于更多 jekyll 的使用请看 [官方文档](http://jekyllrb.com/docs/home/)

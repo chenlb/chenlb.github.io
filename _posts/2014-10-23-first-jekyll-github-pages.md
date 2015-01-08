@@ -19,12 +19,12 @@ github 的 [GitHub Flavored Markdown](https://help.github.com/articles/github-fl
 
 jekyll 官网使用说明，在 _config.yml 里配置。
 
-```
+```yml
 kramdown:
 	input: GFM
 ```
 
-#### 代码高亮
+### 代码高亮
 
 选择使用 [google-code-prettify 代码高亮](https://code.google.com/p/google-code-prettify/)。参考 [highlight-of-jekyll](http://yansu.org/2013/04/22/highlight-of-jekyll.html) 的文章。
 

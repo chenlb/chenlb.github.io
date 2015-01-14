@@ -55,13 +55,29 @@ markdown 文档编辑器。但 OS X Yosemite 10.10 后它保存后会卡。慢�
 
 ### Homebrew
 
-使用 brew 来管理软件。
+使用 [brew](http://brew.sh/) 来管理软件。
 
 安装
 
 ```bash
 ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)”
 brew doctor
+```
+
+比如安装 go
+
+```bash
+brew install go
+```
+
+#### homebrew-cask
+
+有了 brew 后，还可以安装 cask 插件 [homebrew-cask](https://github.com/caskroom/homebrew-cask)，它可以用 brew 方式安装界面的应用程序。
+
+brew 0.9.5 以上可以如下安装。详细请看 [brew cask 官方使用文档](https://github.com/caskroom/homebrew-cask/blob/master/USAGE.md)。
+
+```bash
+brew install caskroom/cask/brew-cask
 ```
 
 ## 使用技巧

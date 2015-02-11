@@ -82,7 +82,7 @@ brew install caskroom/cask/brew-cask
 
 ## 使用技巧
 
-### 销屏
+### 锁屏
 
 用习惯了 windows 的 win + L 来销屏，在人离开一会时保密。
 
@@ -150,4 +150,14 @@ ssh 的 session  保存，没有退出再打开新窗口登录不用输入密码
 Host *
 ControlMaster auto
 ControlPath ~/.ssh/master-%r@%h:%p
+```
+
+### ssh 保持登录时间，不自动退出
+
+```bash
+#vim /etc/ssh_config
+
+ServerAliveCountMax 36
+ServerAliveInterval 80
+TCPKeepAlive yes
 ```

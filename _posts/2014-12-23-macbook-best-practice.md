@@ -161,3 +161,18 @@ ServerAliveCountMax 36
 ServerAliveInterval 80
 TCPKeepAlive yes
 ```
+
+### 创建 /home 目录
+
+有些人应用目录写死在 /home/xxx 目录下的。mac 默认创建不了这目录，报如下错。
+
+```bash
+mkdir: /home/abc: Operation not supported
+```
+
+可以修改 /etc/auto_master
+
+```bash
+sudo vim /etc/auto_master
+#把 /home 注释掉
+```

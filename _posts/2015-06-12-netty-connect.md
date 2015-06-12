@@ -32,3 +32,5 @@ public static Channel connect(Bootstrap bootstrap, SocketAddress serverAddress) 
   }
 }
 ```
+
+更详细请看 https://netty.io/4.0/api/io/netty/channel/ChannelFuture.html

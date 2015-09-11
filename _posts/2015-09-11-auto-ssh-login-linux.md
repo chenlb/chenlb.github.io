@@ -4,7 +4,7 @@ title: ssh 自动交互登录
 tags: [ssh, login]
 ---
 
-## 自动交互登录
+# 自动交互登录
 
 ```bash
 #!/usr/bin/expect

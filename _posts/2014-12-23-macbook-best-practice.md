@@ -10,7 +10,7 @@ tags: [mac]
 
 ### XtraFinder
 
-增强 Finder 功能。
+[XtraFinder](https://www.trankynam.com/xtrafinder/) 增强 Finder 功能。
 
  * 多标签
  * 复制路径

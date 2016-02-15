@@ -1,7 +1,7 @@
 ---
 layout: post
-title: git 使用问题汇总
-tags: [git]
+title: git 使用常见问题汇总
+tags: [git,faq]
 ---
 
 # clone EOF

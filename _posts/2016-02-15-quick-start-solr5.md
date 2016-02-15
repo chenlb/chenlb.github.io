@@ -22,9 +22,9 @@ bin/solr start
 ```bash
 #用 sample_techproducts_configs 示例创建 core
 bin/solr create_core -c demo -d sample_techproducts_configs
-
-#http://localhost:8983/solr/#/ 可以选择 demo 的 core 了
 ```
+
+[http://localhost:8983/solr](http://localhost:8983/solr/#/) 可以选择 demo 的 core 了
 
 创建输出结果如下
 
@@ -44,7 +44,9 @@ http://localhost:8983/solr/admin/cores?action=CREATE&name=demo&instanceDir=demo
 
 ## add-doc
 
-可以在 http://localhost:8983/solr/#/demo/documents 里添加 doc (界面里 Document Type 使用 JSON), 如
+可以在
+[http://localhost:8983/solr/#/demo/documents](http://localhost:8983/solr/#/demo/documents)
+里添加 doc (界面里 Document Type 使用 JSON), 如
 
 ```json
 {"id":"A","title":"solr 5 快速入门", "popularity":3}
@@ -62,17 +64,19 @@ http://localhost:8983/solr/admin/cores?action=CREATE&name=demo&instanceDir=demo
 
 但这批量，界面上没有 commit 的选项，要手动 commit 下。使用
 
-```
-#手动 commit
-http://localhost:8983/solr/demo/update?commit=true
+手动 commit, http://localhost:8983/solr/demo/update?commit=true
 
-#看结果。有4个文档了。
-```
+看结果。有4个文档了。
 
-### post-tool (url 命令添加文档)
+### post-tool
+
+使用 java post tool 命令添加文档.
 
 ```bash
 cd ~/Downloads/runtime/solr-5.4.1
+
+# 查询怎么使用
+java -jar example/exampledocs/post.jar -h
 
 #java post tool 添加
 java -Durl=http://localhost:8983/solr/demo/update -Ddata=args -Dtype=application/json -jar example/exampledocs/post.jar '
@@ -86,6 +90,8 @@ java -Durl=http://localhost:8983/solr/demo/update -Ddata=args -Dtype=application
 ```
 
 ### curl-post
+
+用 curl 来 post 数据。
 
 ```bash
 curl -X POST -H 'Content-Type: application/json' 'http://localhost:8983/solr/demo/update?commit=true' --data-binary '

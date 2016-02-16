@@ -34,3 +34,39 @@ client
 http://dev.mysql.com/downloads/workbench/
 https://www.webyog.com/
 
+## linux 安装
+
+安装 cmake
+
+```bash
+wget http://www.cmake.org/files/v3.2/cmake-3.2.3.tar.gz
+tar zxf cmake-3.2.3.tar.gz
+
+./configure
+make
+make install
+```
+
+安装 mysql
+
+```bash
+cmake \
+-DCMAKE_INSTALL_PREFIX=/usr/local/mysql \
+-DMYSQL_DATADIR=/data/mysql \
+-DSYSCONFDIR=/usr/locar/etc \
+-DWITH_MYISAM_STORAGE_ENGINE=1 \
+-DWITH_INNOBASE_STORAGE_ENGINE=1 \
+-DWITH_MEMORY_STORAGE_ENGINE=1 \
+-DWITH_READLINE=1 \
+-DMYSQL_UNIX_ADDR=/tmp/mysql.sock \
+-DMYSQL_TCP_PORT=3306 \
+-DENABLED_LOCAL_INFILE=1 \
+-DWITH_PARTITION_STORAGE_ENGINE=1 \
+-DEXTRA_CHARSETS=all \
+-DDEFAULT_CHARSET=utf8 \
+-DDEFAULT_COLLATION=utf8_general_ci
+
+make
+make install
+```
+

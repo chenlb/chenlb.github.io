@@ -1,12 +1,12 @@
 ---
 layout: post
-title: hightcharts 使用 csv 数据源
+title: hightcharts 使用 csv 数据源
 tags: [hightcharts,csv]
 ---
 
-## hightcharts 配置
+## hightcharts 配置
 
-data-line.html 文件内容
+data-line.html 文件内容
 
 ```html
 <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
@@ -62,6 +62,6 @@ data-line.csv
 12月,9.6,2.5,1.0,4.8
 ```
 
-## 参考资料
+## 参考资料
 
-* [官方说明](http://www.highcharts.com/docs/working-with-data/data-module)
+* [官方说明](http://www.highcharts.com/docs/working-with-data/data-module)

@@ -26,7 +26,7 @@ kramdown:
 
 ### 代码高亮
 
-选择使用 [google-code-prettify 代码高亮](https://code.google.com/p/google-code-prettify/)。参考 [highlight-of-jekyll](http://yansu.org/2013/04/22/highlight-of-jekyll.html) 的文章。
+选择使用 [google-code-prettify 代码高亮](https://github.com/google/code-prettify)。参考 [highlight-of-jekyll](http://yansu.org/2013/04/22/highlight-of-jekyll.html) 的文章。
 
 在代码模板如 default.html 里加上。把 google-code-prettify 放到 js 目录下。
 

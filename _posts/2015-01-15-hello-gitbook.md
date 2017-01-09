@@ -74,10 +74,12 @@ gitbook build .
 
 ## Gitbook GUI
 
-如果使用 gitbook 命令比较麻烦可以使用它的 GUI。可以在 [gitbook editor](https://github.com/GitbookIO/editor/releases) 找到。
+如果使用 gitbook 命令比较麻烦可以使用它的 GUI。可以在 [gitbook editor](https://www.gitbook.com/editor) 找到。
 
 有各个平以的 GUI，包括 linux、win、mac os x。
 
-不过 gitbook 以后重点发展在线编辑。但 GUI 还可以用。如图：
+~~不过 gitbook 以后重点发展在线编辑。但 GUI 还可以用。~~
 
-![gitbook editor](https://camo.githubusercontent.com/f4c22321ada15d14b9883992dc7c2de595e5c93c/68747470733a2f2f7261772e6769746875622e636f6d2f476974626f6f6b494f2f656469746f722f6d61737465722f707265766965772e706e67)
+如图：
+
+![gitbook editor](https://www.gitbook.com/assets/images/editor/preview_osx.png){:.img-responsive}

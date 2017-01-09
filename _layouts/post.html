@@ -4,7 +4,12 @@ layout: default
 <div id="content" class="col-md-9 col-sm-9 col-xs-12">
   <div id="content_header">
   <h1>{{ page.title }}</h1>
-  <div>发表于 {{ page.date | date:"%Y-%m-%d" }}</div>
+  <div>发表于：{{ page.date | date:"%Y-%m-%d" }}</div>
+  <div>标签：
+    {% for tag in page.tags %}
+    <a href="/tags.html#{{ tag }}">{{ tag }}</a>,
+    {% endfor %}
+  </div>
   <hr/>
   </div>
   <div id="content_body">
@@ -21,11 +26,9 @@ $(document).ready(function() {
 });
 </script>
 <hr/>
-<span id="uyan-comment"></span>
-{% include uyan-comment.html %}
+{% if jekyll.environment == "production" %}
+  <span id="uyan-comment"></span>
+  {% include uyan-comment.html %}
+{% endif %}
 </div>
 <nav id="affix-nav" class="sidebar col-md-3 col-sm-3 hidden-xs"></nav>
-<div id="back-to-top" class="affix">
-  <a href="#uyan-comment">评论</a><br/>
-  <a href="#top">返回顶部</a>
-</div>

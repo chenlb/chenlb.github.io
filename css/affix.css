@@ -61,7 +61,6 @@ ul.affix-bottom {
 }
 #back-to-top.affix {
 		position: fixed;
-		bottom: 20px;
+		bottom: 40px;
 		right: 40px;
-		width: 21.5%;
 }

@@ -17,18 +17,17 @@ layout: default
   </div>
 <script type="text/javascript">
 $(document).ready(function() {
-  $('body').attr('data-spy', 'scroll');
-  $('body').attr('data-target', '#affix-nav');
+  $('#content_body img').addClass('img-responsive');
   initToc($('#affix-nav'));
-  $('#affix-nav > ul').addClass('sidenav');
-  $('#affix-nav > ul').attr('data-spy', 'affix');
-  $('#affix-nav > ul').attr('data-offset-top', '30');
+  initTocAffix($('#affix-nav > ul'));
 });
 </script>
-<hr/>
-{% if jekyll.environment == "production" %}
-  <span id="uyan-comment"></span>
-  {% include uyan-comment.html %}
-{% endif %}
 </div>
 <nav id="affix-nav" class="sidebar col-md-3 col-sm-3 hidden-xs"></nav>
+
+{% if jekyll.environment == "production" %}
+<div id="uyan-comment">
+<hr/>
+  {% include uyan-comment.html %}
+</div>
+{% endif %}

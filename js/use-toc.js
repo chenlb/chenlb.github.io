@@ -12,3 +12,8 @@ function initToc(obj) {
     }
   });
 }
+function initTocAffix(my_ul) {
+  my_ul.addClass('sidenav');
+  my_ul.attr('data-spy', 'affix');
+  my_ul.attr('data-offset-top', '30');
+}

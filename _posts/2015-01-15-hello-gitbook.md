@@ -82,4 +82,4 @@ gitbook build .
 
 如图：
 
-![gitbook editor](https://www.gitbook.com/assets/images/editor/preview_osx.png){:.img-responsive}
+![gitbook editor](https://www.gitbook.com/assets/images/editor/preview_osx.png)

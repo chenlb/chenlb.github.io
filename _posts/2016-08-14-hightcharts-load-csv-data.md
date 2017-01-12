@@ -62,6 +62,39 @@ data-line.csv
 12月,9.6,2.5,1.0,4.8
 ```
 
+## 示例
+
+<script src="http://cdn.bootcss.com/highcharts/5.0.6/highcharts.js"></script>
+<script src="http://cdn.bootcss.com/highcharts/5.0.6/js/modules/exporting.js"></script>
+<script src="http://cdn.bootcss.com/highcharts/5.0.6/modules/data.js"></script>
+
+<div id="highcharts_area"></div>
+<script>
+$.get('/assets/demo/data-line.csv', function(csv_data) {
+    $('#highcharts_area').highcharts({
+        data: {
+            csv: csv_data
+        },
+        title: {
+            text: '月度平均温度',
+        },
+        subtitle: {
+            text: '来源: XXX',
+        },
+        yAxis: {
+            title: {
+                text: '温度 (°C)'
+            }
+        },
+        tooltip: {
+            valueSuffix: ' °C',
+            shared: true,
+            crosshairs: true
+        }
+    });
+});
+</script>
+
 ## 参考资料
 
 * [官方说明](http://www.highcharts.com/docs/working-with-data/data-module)

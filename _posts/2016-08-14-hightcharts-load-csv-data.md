@@ -9,10 +9,10 @@ tags: [hightcharts,csv]
 data-line.html 文件内容
 
 ```html
-<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
-<script src="http://code.highcharts.com/highcharts.js"></script>
-<script src="http://code.highcharts.com/modules/exporting.js"></script>
-<script src="http://code.highcharts.com/modules/data.js"></script>
+<script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/highcharts/5.0.6/highcharts.js"></script>
+<script src="//cdn.bootcss.com/highcharts/5.0.6/js/modules/exporting.js"></script>
+<script src="//cdn.bootcss.com/highcharts/5.0.6/modules/data.js"></script>
 
 <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 <script>
@@ -64,9 +64,9 @@ data-line.csv
 
 ## 示例
 
-<script src="http://cdn.bootcss.com/highcharts/5.0.6/highcharts.js"></script>
-<script src="http://cdn.bootcss.com/highcharts/5.0.6/js/modules/exporting.js"></script>
-<script src="http://cdn.bootcss.com/highcharts/5.0.6/modules/data.js"></script>
+<script src="//cdn.bootcss.com/highcharts/5.0.6/highcharts.js"></script>
+<script src="//cdn.bootcss.com/highcharts/5.0.6/js/modules/exporting.js"></script>
+<script src="//cdn.bootcss.com/highcharts/5.0.6/modules/data.js"></script>
 
 <div id="highcharts_area"></div>
 <script>

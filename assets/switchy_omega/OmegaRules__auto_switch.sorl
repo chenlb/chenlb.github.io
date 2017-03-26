@@ -1,23 +1,65 @@
 [SwitchyOmega Conditions]
 ; Require: SwitchyOmega >= 2.3.2
-; Date: 2017/3/25
+; Date: 2017/3/26
 ; Usage: https://github.com/FelisCatus/SwitchyOmega/wiki/RuleListUsage
 
+; google
 *.google.com
 *.gstatic.com
 *.google.com.hk
+*.googleusercontent.com
 *.googleapis.com
 *.ggpht.com
-*.googlegroups.com
-*.googleplay.com
-groups.google.cn
-.googlesile.com
+*.g.co
+
+; github
 gist.github.com
-*.twitter.com
-*.twimg.com
+
+*.blogger.com
+*.blogspot.com
+*.blogspot.hk
+*.blogblog.com
+
+; slideshare
+*.slideshare.net
+*.amazonaws.com
+
+; youtube
 *.youtube.com
 *.ytimg.com
 *.googlevideo.com
 *.youtube-nocookie.com
-*.slideshare.net
+
+; dropbox
+*.dropbox.com
+*.dropboxstatic.com
+
+; instagram
+*.instagram.com
+
+; pinterest
+*.pinterest.com
+*.pinimg.com
+*.accountkit.com
+
+; snapchat
+*.snapchat.com
+
+; facebook
 *.facebook.com
+*.atdmt.com
+*.fbcdn.net
+
+; twitter
+*.twitter.com
+*.twimg.com
+
+; wiki
+*.wikipedia.org
+
+; voa
+*.voachinese.com
+*.voanews.com
+*.scorecardresearch.com
+*.omtrdc.net
+*.quantserve.com

@@ -26,12 +26,16 @@
       return "<a href='#" + fixedEncodeURIComponent(header.id) + "'>" + innerText + "</a>";
     }
 
+    var sectionNum = 1;
     var headers = $(settings.headers).filter(function() {
       // get all headers with an ID
       var previousSiblingName = $(this).prev().attr( "name" );
       if (!this.id && previousSiblingName) {
         this.id = $(this).attr( "id", previousSiblingName.replace(/\./g, "-") );
       }
+      //按顺序定义
+      $(this).attr("id", "toc-"+sectionNum);
+      sectionNum += 1;
       return this.id;
     }), output = $(this);
     if (!headers.length || headers.length < settings.minimumHeaders || !output.length) {

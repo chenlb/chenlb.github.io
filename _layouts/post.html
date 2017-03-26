@@ -24,23 +24,3 @@ $(document).ready(function() {
 </script>
 </div>
 <nav id="affix-nav" class="sidebar col-md-3 col-sm-3 hidden-xs"></nav>
-{% if jekyll.environment == "production" %}
-<div id="duoshuo-comment" class="col-md-9 col-sm-9 col-xs-12">
-<hr/>
-<div id="duoshuo-thread" class="ds-thread" data-thread-key="{{ page.id }}" data-title="{{ page.title }}"></div>
-<script type="text/javascript">
-var page_url = '//'+document.domain+'{{ page.url }}';
-$('#duoshuo-thread').attr('data-url', page_url);
-
-var duoshuoQuery = {short_name:"chenlb"};
-	(function() {
-		var ds = document.createElement('script');
-		ds.type = 'text/javascript';ds.async = true;
-		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-		ds.charset = 'UTF-8';
-		(document.getElementsByTagName('head')[0]
-		 || document.getElementsByTagName('body')[0]).appendChild(ds);
-	})();
-</script>
-</div>
-{% endif %}

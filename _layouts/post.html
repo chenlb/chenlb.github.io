@@ -25,15 +25,16 @@ $(document).ready(function() {
 </div>
 <nav id="affix-nav" class="sidebar col-md-3 col-sm-3 hidden-xs"></nav>
 {% if jekyll.environment == "production" %}
-<div id="changyan-comment" class="col-md-9 col-sm-9 col-xs-12">
+<div id="comment" class="col-md-9 col-sm-9 col-xs-12">
 <hr/>
-<div id="SOHUCS" sid="{{ page.id }}"></div>
-<script charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/changyan.js" ></script>
-<script type="text/javascript">
-window.changyan.api.config({
-appid: 'cysUM5lHh',
-conf: 'prod_ef0ca8ec4c430c4f790c6d00e17962a4'
-});
+<div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+<script>
+  var cloudTieConfig = {
+    sourceId: "{{ page.id }}",
+    productKey: "73cc52e57fcf4d949a3cc829797cae9a",
+    target: "cloud-tie-wrapper"
+  };
 </script>
+<script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
 </div>
 {% endif %}

@@ -12,6 +12,7 @@
 *.googleapis.com
 *.ggpht.com
 *.g.co
+*.google.co.th
 
 ; github
 gist.github.com

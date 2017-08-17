@@ -24,6 +24,7 @@ ln -s /usr/local/Cellar/protobuf@2.5/2.5.0/bin/protoc /user/local/bin/protoc
 #openssl, cmake
 brew install openssl
 brew install cmake
+brew install snappy
 
 #编译
 #编译前要设置 openssl 的路径

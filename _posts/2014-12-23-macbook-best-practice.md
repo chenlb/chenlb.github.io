@@ -60,8 +60,7 @@ markdown 文档编辑器。但 OS X Yosemite 10.10 后它保存后会卡。慢�
 安装
 
 ```bash
-ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)”
-brew doctor
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
 比如安装 go

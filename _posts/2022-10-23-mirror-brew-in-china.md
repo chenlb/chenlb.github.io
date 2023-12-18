@@ -12,6 +12,8 @@ tags: [brew,Homebrew,mirror]
 export HOMEBREW_BREW_GIT_REMOTE="https://mirrors.ustc.edu.cn/brew.git"
 export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.ustc.edu.cn/homebrew-core.git"
 export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.ustc.edu.cn/homebrew-bottles"
+# brew 4.0 及之后的版本使用新的元数据 JSON API 接口
+export HOMEBREW_API_DOMAIN="https://mirrors.ustc.edu.cn/homebrew-bottles/api"
 ```
 
 更新 brew
@@ -19,6 +21,19 @@ export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.ustc.edu.cn/homebrew-bottles"
 ```bash
 # 更新
 brew update
+```
+
+如果使用 brew services
+
+与 brew services 有关的文件，用于在 macOS (launchctl) 与 Linux (systemctl) 上管理 brew 安装的服务。
+```bash
+brew tap --custom-remote --force-auto-update homebrew/services https://mirrors.ustc.edu.cn/homebrew-services.git
+```
+
+Homebrew cask 软件仓库
+
+```bash
+brew tap --custom-remote --force-auto-update homebrew/cask https://mirrors.ustc.edu.cn/homebrew-cask.git
 ```
 
 附：
